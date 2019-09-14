@@ -1,0 +1,10 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+
+css
+-external
+-internal (<style> body {color: pink;})
+-inline (style="color: pink;")
