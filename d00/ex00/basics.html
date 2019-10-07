@@ -1,25 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Home</title>
-  <style media="screen">
-  body{
-  	background-color: pink;
+	<meta HTTP-EQUIV="refresh" CONTENT="3">
+	<meta charset="UTF-8">
+	<title>Basics</title>
+<style media="screen" type="text/css">
+body{
+background-color: pink;
 }
-.navi{
-	color: white;
+.navi h1{
+color: white;
+text-align: center;
 }
-.img-med{
-	width: 8vw;
-	height: 8vw;
+.img-small{
+width: 48vw;
+height: 50vw;
+background-color: blue;
+display: inline-block;
+margin: 2vw;
 }
-  </style>
-  <META HTTP-EQUIV="refresh" CONTENT="3">
+.img-small img{
+width: 96%;
+height: 40vw;
+padding: 1vw 2vw 3vw 1vw;
+}
+.img-small a{
+color: white;
+text-decoration: none;
+}
+.img-small h5{
+text-align: center;
+margin: 0px;
+}
+.banner{
+display: inline-flex;
+background-color: red;
+width: 100%;
+}
+#signature{
+font-style: italic;
+font-family: monospace;
+text-align: right;
+
+}
+</style>
 </head>
 <body>
-	<div class="navi" text-align="center">
-		-@so bigger-
+	<div class="navi">
+		<h1>-&#206 so bigger-</h1>
 	</div>
-	
+	<div class="banner">
+		<figure class="img-small">
+			<img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fchinacoupon.info%2Fwp-content%2Fuploads%2F2019%2F02%2Fnew-logo-gearbest.jpg&f=1&nofb=1 "/>
+			<a href="https://www.gearbest.com"><h5>gearbest</h5></a>
+		</figure>
+		<figure class="img-small">
+			<img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fnetstorage-briefly.akamaized.net%2Fimages%2Fab418046abaa26d7.jpg&f=1&nofb=1 "/>
+			<a href="https://www.takealot.com"><h5>takealot</h5></a>
+		</figure>
+	</div>
+	<hr>
+	<p id="signature">&copy ksefeane 2019</p>
 </body>
 </html>
