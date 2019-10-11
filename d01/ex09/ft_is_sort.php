@@ -11,8 +11,13 @@ function ft_is_sort($arr)
 	{
 		if (strcmp($org[$i], $arr[$i]) !== 0)
 			return (false);
-		$i++;
+		i++;
 	}
 	return (true);
 }
+$arr = explode(" ", $argv[1]);
+if (ft_is_sort($arr))
+	echo "the array is sorted\n";
+else
+	echo "the array is not sorted";
 ?>
