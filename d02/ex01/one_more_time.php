@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
-function mapmon($month)
+function nummon($month)
 {
 	$i = 0;
 	$m = array("January", "February", "March", "April", "May", "June", "July",
@@ -21,13 +21,20 @@ function maptime($time)
 	$m = (int)$t[1] * 60;
 	$s = (int)$t[2];
 	$sum = $h + $m + $s;
-	echo $sum;
+	return ($sum);
 }
 function mapdate($date)
 {
-
+	$day = maptime("24:00:00");
+	$d = $date * $day;
+	return $d;
+}
+function mapmon()
+{
+	$mon = mapdate(30);
+	echo $mon;
 }
 //mapmon($argv[1]);
-maptime($argv[1]);
+mapmon();
 echo "\n";
 ?>
