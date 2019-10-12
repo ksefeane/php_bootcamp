@@ -20,21 +20,32 @@ function maptime($time)
 	$h = (int)$t[0] * 3600;
 	$m = (int)$t[1] * 60;
 	$s = (int)$t[2];
-	$sum = $h + $m + $s;
-	return ($sum);
+	return $h + $m + $s;
 }
 function mapdate($date)
 {
-	$day = maptime("24:00:00");
-	$d = $date * $day;
-	return $d;
+	$d = maptime("24:00:00");
+	return $d * $date;
 }
-function mapmon()
+function mapmon($month)
 {
-	$mon = mapdate(30);
-	echo $mon;
+	$m = mapdate(30);
+	return $m * $month;
 }
-//mapmon($argv[1]);
-mapmon();
+function mapyea($year)
+{
+	$cy = mapmon(12);
+	return $cy * ($year - 1970);
+}
+function sorter($calender)
+{
+	$cal = explode(" ", $calender);
+	$d = mapdate($cal[1]);
+	$m = mapmon(nummon($cal[2]));
+	$y = mapyea($cal[3]);
+	$t = maptime($cal[4]);
+	echo $d + $m + $y + $t;
+}
+sorter($argv[1]);
 echo "\n";
 ?>
