@@ -1,5 +1,5 @@
 body{
-	background-color: grey;
+	background-color: black;
 	margin: 0 auto;
 	color: white;
 }
@@ -20,7 +20,7 @@ h1, h2, p{
 	width: 450px;
 }
 .nav {
-	background-color: black;
+	background-color: teal;
 	text-align: center;
 	opacity: 0.7;
 	height: 4vw;
@@ -41,11 +41,8 @@ h1, h2, p{
 #gap{
 	width: 3vw;
 }
-#press{
-	background-color: red;
-}
 .button {
-  background-color: red;
+  background-color: teal;
   border: none;
   color: white;
   padding: 15px 32px;
