@@ -1,0 +1,11 @@
+body{
+	background-color: teal;
+}
+.banner, img{
+	width: 100%;
+	height: 40vw;
+}
+.img-med{
+	height: 300px;
+	width: 450px;
+}
